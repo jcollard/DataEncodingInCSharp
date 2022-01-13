@@ -144,5 +144,7 @@ this project.
 
 ![Create PR](images/final-create-pr.png)
 
+![Do not Merge](images/dontmerge.png)
+
 You should now be able to see the projects that were created when you initialized your project by running `dotnet new console`. Do **NOT** click the `Merge Pull Request` button. If you do so, it will update your main branch and you will no longer be able to see the difference.
 
