@@ -345,7 +345,7 @@ know the possible value for the shifts: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
 
 You could go through each file and manually by hand and run each possible cipher
 over the string to find the correct answer. However, this would be incredibly
-tedious. Instead, we can write a for loop to do this for us. Here is the general
+tedious. Instead, we can write a loop to iterate through each value. Here is the general
 algorithm:
 
 1. Create an `int` variable `shift` and set it to 1
