@@ -343,17 +343,18 @@ Let's start by decrypting it. To read the file you can use a built in C# method
 Unfortunately, you don't know the shift value for each file. However, you do
 know the possible value for the shifts: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
 
-You could, by hand, go through each file and manually run each possible cipher
+You could go through each file and manually by hand and run each possible cipher
 over the string to find the correct answer. However, this would be incredibly
 tedious. Instead, we can write a for loop to do this for us. Here is the general
 algorithm:
 
-1. Create a list that stores each of the possible shift values
-2. Use a `foreach` loop to iterate through each possible shift
-3. For each shift
-   1. Create a cipher
+1. Create an `int` variable `shift` and set it to 1
+2. Use a `while` loop that executes if `shift <= 10`
+3. Within the loop:
+   1. Create a cipher using the current `shift` value
    2. Run the `Decrypt(string)` method
    3. Write the result to the console
+   4. Increment `shift` by 1.
 
 Once you have done this, you can "eye-ball" each output and select the one that
 is not gibberish.
