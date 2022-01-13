@@ -1,5 +1,19 @@
 # Data Encoding in C#
 
+In this activity, you will explore how text is represented in a computer using
+binary. When you have finished this activity you should:
+
+* Have a basic understanding of encoding with binary
+* Be able to convert between ASCII, Decimal, Binary, and Hexadecimal
+* Know how to use C# to convert values between `char` and `int` encodings
+* Write a program that can encrypt and decrypt text files using a Shift Cipher
+
+## Task List
+
+- [ ] Complete Project Setup
+- [ ] Learn about encoding text in C#
+- [ ] Complete the Cipher Challenge
+
 ## Setting up Repository
 
 Before continuing, you should:
@@ -239,154 +253,7 @@ Before continuing to the next section of this activity, you should:
 3. Create a tag called `part-one`
 4. Push your work to GitHub
 
-## Message Decoder Challenge (Graded)
+## Complete the Challenge
 
-In this repository there are several files which have encrypted messages.
-These messages were encoded by taking taking a string of characters and adding
-some number to each of the characters. This process of encryption is known as a
-**shift cipher**. If you're interested in knowing more, there is a decent
-article about it on Wikipedia: [LINK](https://en.wikipedia.org/wiki/Caesar_cipher)
-
-Your challenge is to finish writing the encrypt and decrypt methods provided in the `Cipher.cs`
-program then use your implementation to decrypt each of the messages in the
-`secrets` folder.
-
-1. Start by deleting (or commenting) the code that is currently in your `Main`
-   method. (This is why we committed and tagged our work.)
-
-![Delete Main](imgs/delete_main.gif)
-
-2. Create a `Cipher` variable named `cipher`.
-3. Assign `cipher` to store the result of running `new Cipher(5)`
-
-![New Cipher](imgs/new_cipher.png)
-
-4. Create a `string` variable named `encrypted`
-5. Assign `encrypted` to store the result of running `cipher.Encrypt("rosebud")`;
-6. Write the result to the console.
-
-![RoseBud](imgs/rosebud.png)
-
-7. Next, run your program to test it.
-
-![Rosebud Out](imgs/rosebud_out.png)
-
-### Encrypt Method
-
-Unfortunately, the `Encrypt(string)` method is incomplete. Let's take a look at it.
-
-1. Open the `Cipher.cs` file.
-2. Scroll down to the `Encrypt` method.
-
-![Starting Encrypt](imgs/starting_encrypt.png)
-
-Currently, this method simple loops through the provided string message and
-copies each character into a string variable `newMessage` which is then
-returned. In short, it just copies the original message.
-
-To finish this method, you need to increase the value of each character by
-`this.shift` (the shift amount specified in the constructor).
-
-When you have successfully completed your `Encrypt` method, your program should
-output `wtxjgzi`.
-
-![Encrypted Message](imgs/encrypted_message.png)
-
-#### Commit and Push
-
-When you finish the `Encrypt(string)` method, you should:
-
-1. Save all your work
-2. Commit your work. Your message should be something like `feat: Add Encrypt method`
-3. Push your works
-
-### Decrypt Method
-
-The `Decrypt(string)` method works very similar to the `Encrypt(string)` method.
-However, it should "unshift" each character.
-
-You can test that your `Decrypt(string)` method works by applying it to a
-previously encrypted message:
-
-![Decrypted Message](imgs/decrypted_message.png)
-
-#### Commit and Push
-
-When you finish the `Decrypt(string)` method, you should:
-
-1. Save all your work
-2. Commit your work. Your message should be something like `feat: Add Decrypt method`
-3. Push your works
-
-### Decrypting secrets/1.txt
-
-Finally, you must decrypt the files that are in the `secrets` folder. Each file
-is encrypted using a shift between 1 and 10. The file `secrets/1.txt` is
-encrypted using a shift of `3`. 
-
-Let's start by decrypting it. To read the file you can use a built in C# method
-`System.IO.File.ReadAllText(string)`.
-
-1. Create a `string` variable to store the `message` and `decrypted` message.
-2. Create a `Cipher` variable to store the cipher.
-3. Read `secrets/1.txt` using `ReadAllText("secrets/1.txt")`
-4. Assign `message` to store the result.
-5. Create a cipher with a shift value of 3.
-6. Use the cipher's `Decrypt(string)` method to decrypt `message`
-7. Assign `decrypted` to store the result
-8. Write the result to the console
-
-![Decrypt](imgs/decrypt.png)
-
-### Decrypting All the Files
-
-Unfortunately, you don't know the shift value for each file. However, you do
-know the possible value for the shifts: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
-
-You could go through each file and manually by hand and run each possible cipher
-over the string to find the correct answer. However, this would be incredibly
-tedious. Instead, we can write a loop to iterate through each value. Here is the general
-algorithm:
-
-1. Create an `int` variable `shift` and set it to 1
-2. Use a `while` loop that executes if `shift <= 10`
-3. Within the loop:
-   1. Create a cipher using the current `shift` value
-   2. Run the `Decrypt(string)` method
-   3. Write the result to the console
-   4. Increment `shift` by 1.
-
-Once you have done this, you can "eye-ball" each output and select the one that
-is not gibberish.
-
-For example:
-
-![Decode](imgs/decode.png)
-
-### Decrypted Messages
-
-After decrypting each message, add them below:
-
-```
-1. You have decrypted this message!
-2. ?
-3. ?
-4. ?
-5. ?
-6. ?
-7. ?
-8. ?
-9. ?
-```
-
-## Submitting your Solution
-
-When you are finished:
-
-1. Save all of your files.
-2. Commit your files. Your message should be something like `chore: Finish
-   decrypting messages.`
-3. Push your work
-4. Create a tag called `solution`
-5. Push your tag
-6. Verify your work is visible on your Pull Request
+Now that you have a basic understanding of character encodings, complete the
+challenge described in the Cipher.md file: [LINK](Cipher.md)
