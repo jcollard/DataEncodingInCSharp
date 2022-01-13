@@ -10,6 +10,21 @@ Your challenge is to finish writing the encrypt and decrypt methods provided in 
 program then use your implementation to decrypt each of the messages in the
 `secrets` folder.
 
+- [Message Encryption/Decryption Challenge (Graded)](#message-encryptiondecryption-challenge-graded)
+  - [Getting Started](#getting-started)
+  - [Encrypt Method](#encrypt-method)
+    - [Commit and Push](#commit-and-push)
+  - [Decrypt Method](#decrypt-method)
+    - [Commit and Push](#commit-and-push-1)
+  - [Decrypting secrets/1.txt](#decrypting-secrets1txt)
+    - [Loading a Text File](#loading-a-text-file)
+  - [Command Line Arguments](#command-line-arguments)
+  - [Decrypting All the Files](#decrypting-all-the-files)
+  - [Decrypted Messages](#decrypted-messages)
+  - [Submitting your Solution](#submitting-your-solution)
+
+## Getting Started
+
 1. Start by deleting (or commenting) the code that is currently in your `Main`
    method. (This is why we committed and tagged our work.)
 

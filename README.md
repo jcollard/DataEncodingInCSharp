@@ -8,6 +8,21 @@ binary. When you have finished this activity you should:
 * Know how to use C# to convert values between `char` and `int` encodings
 * Write a program that can encrypt and decrypt text files using a Shift Cipher
 
+- [Data Encoding in C](#data-encoding-in-c)
+  - [Task List](#task-list)
+  - [Setting up Repository](#setting-up-repository)
+  - [What is Encoding?](#what-is-encoding)
+  - [Encoding Text as an Integer](#encoding-text-as-an-integer)
+    - [Quick Binary Question](#quick-binary-question)
+  - [Creating a Simple Encoding for Letters](#creating-a-simple-encoding-for-letters)
+    - [AP Exam Practice](#ap-exam-practice)
+  - [Encoding Text in C](#encoding-text-in-c)
+    - [Converting from char to int](#converting-from-char-to-int)
+    - [Converting from int to char](#converting-from-int-to-char)
+    - [Arithmetic with Characters](#arithmetic-with-characters)
+    - [Tag your work](#tag-your-work)
+  - [Complete the Challenge](#complete-the-challenge)
+
 ## Task List
 
 - [ ] Complete Project Setup
