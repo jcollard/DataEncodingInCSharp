@@ -25,9 +25,9 @@ work.
 
 ![Settings](images/settings.png)
 
-2. On the settings page, select the `Manage Access` option on the left.
+2. On the settings page, select the `Collaborators` option on the left.
 
-![Manage Access](images/manage_access.png)
+![Manage Access](images/collaborators.png)
 
 3. On the manage access page, select `Add people`
 
@@ -43,7 +43,7 @@ branch is typically reserved for completed work on projects. A secondary branch
 called `develop` is typically created where you can work without fear of
 "polluting" the `main` branch.
 
-1. Using GitHub Desktop, Clone your new repository.
+1. If you have not already done so, use GitHub Desktop, Clone your new repository.
 2. Open your project in Visual Studio Code
 3. Use the command palette (Command + Shift + P) to run `Git: Create Branch`
 
@@ -116,7 +116,7 @@ this project.
 
 1. Commit your work. 
    * Your commit message should be something like `chore: Initialize project`
-2. Push your work
+2. Push your work.
 3. In your web browser, visit your repository
 4. Select the `Pull Request` tab
 
@@ -143,3 +143,6 @@ this project.
 9. Finally, click `Create Pull Request`
 
 ![Create PR](images/final-create-pr.png)
+
+You should now be able to see the projects that were created when you initialized your project by running `dotnet new console`. Do **NOT** click the `Merge Pull Request` button. If you do so, it will update your main branch and you will no longer be able to see the difference.
+
