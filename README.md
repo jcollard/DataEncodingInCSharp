@@ -20,6 +20,7 @@ binary. When you have finished this activity you should:
     - [Converting from char to int](#converting-from-char-to-int)
     - [Converting from int to char](#converting-from-int-to-char)
     - [Arithmetic with Characters](#arithmetic-with-characters)
+      - [A Little Practice](#a-little-practice)
     - [Tag your work](#tag-your-work)
   - [Complete the Challenge](#complete-the-challenge)
 
@@ -257,6 +258,28 @@ them. Let's try this out:
 4. Run your program to see the result:
 
 ![Result](imgs/result.png)
+
+When we increase a character my some amount, we often say that we "shift" the
+character by that amount. In the example above, you shifted the character `A` by
+1.
+
+#### A Little Practice
+
+Answer the following questions. You may need to write some code to find the
+answer.
+
+1. What is the result of shifting the character `Z` by 3? (`'Z' + 3`)
+
+** ANSWER HERE **
+
+2. What is the result of shifting the character `F` by -5?
+
+** ANSWER HERE **
+
+3. What is the result of shifting each character in the string `"Khoor#Zruog$`"
+   by -3?
+
+** ANSWER HERE **
 
 ### Tag your work
 
