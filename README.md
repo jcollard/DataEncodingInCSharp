@@ -25,9 +25,9 @@ binary. When you have finished this activity you should:
 
 ## Task List
 
-- [ ] Complete Project Setup
-- [ ] Learn about encoding text in C#
-- [ ] Complete the Cipher Challenge
+- [ ] Complete Project Setup: [LINK](Setup.md)
+- [ ] Learn about encoding text in C#: [LINK](#what-is-encoding)
+- [ ] Complete the Cipher Challenge: [LINK](Cipher.md)
 
 ## Setting up Repository
 
