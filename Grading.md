@@ -8,10 +8,6 @@ This mini-project will be weighted as 1/2 a normal project.
 |----------------------------------------------------------------|-----------------------------------------------------------|-----------------------------|-----------------------------|
 | Successfully use a while loop to apply 10 Ciphers to a message | Successfully read command line arguments to select a file | Complete the Encrypt method | Complete the Decrypt method |
 | Decode all 9 messages                                          |                                                           |                             |                             |
-|                                                                |                                                           |                             |                             |
-|                                                                |                                                           |                             |                             |
-|                                                                |                                                           |                             |                             |
-
 ## Computing, Programming, and Practice
 
 | Advanced                                       | Proficient                                               | Basic                                                         | Below Basic                                         |
@@ -19,8 +15,6 @@ This mini-project will be weighted as 1/2 a normal project.
 | Student creates a tag for their final solution | Student does not commit to the main branch               | Student completes the Learn about encoding text in C# section | Student creates a develop branch                    |
 |                                                | Student created a commit after completing Encrypt method |                                                               | Student initializes C# project                      |
 |                                                | Student create a commit after completing Decrypt method  |                                                               | Student creates a pull request from develop to main |
-|                                                |                                                          |                                                               |                                                     |
-|                                                |                                                          |                                                               |                                                     |
 
 ## Skills of a Programmer
 
