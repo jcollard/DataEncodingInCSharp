@@ -11,6 +11,7 @@ program then use your implementation to decrypt each of the messages in the
 `secrets` folder.
 
 - [Message Encryption/Decryption Challenge (Graded)](#message-encryptiondecryption-challenge-graded)
+  - [Grading and Rubric](#grading-and-rubric)
   - [Getting Started](#getting-started)
   - [Encrypt Method](#encrypt-method)
     - [Commit and Push](#commit-and-push)
@@ -22,6 +23,10 @@ program then use your implementation to decrypt each of the messages in the
   - [Decrypting All the Files](#decrypting-all-the-files)
   - [Decrypted Messages](#decrypted-messages)
   - [Submitting your Solution](#submitting-your-solution)
+
+## Grading and Rubric
+
+This mini-project will be weighted as 1/2 a normal project. You can find the rubric here: [LINK](Grading.md)
 
 ## Getting Started
 
