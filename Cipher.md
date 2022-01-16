@@ -1,16 +1,18 @@
 # Message Encryption/Decryption Challenge (Graded)
 
-In this repository there are several files which have encrypted messages.
-These messages were encoded by taking taking a string of characters and adding
-some number to each of the characters. This process of encryption is known as a
+In this repository there are several files which have encrypted messages. These
+messages were encoded by taking taking a string of characters and adding some
+number to each of the characters. This process of encryption is known as a
 **shift cipher**. If you're interested in knowing more, there is a decent
-article about it on Wikipedia: [LINK](https://en.wikipedia.org/wiki/Caesar_cipher)
+article about it on Wikipedia:
+[LINK](https://en.wikipedia.org/wiki/Caesar_cipher)
 
-Your challenge is to finish writing the encrypt and decrypt methods provided in the `Cipher.cs`
-program then use your implementation to decrypt each of the messages in the
-`secrets` folder.
+Your challenge is to finish writing the encrypt and decrypt methods provided in
+the `Cipher.cs` program then use your implementation to decrypt each of the
+messages in the `secrets` folder.
 
-- [Message Encryption/Decryption Challenge (Graded)](#message-encryptiondecryption-challenge-graded)
+- [Message Encryption/Decryption Challenge
+  (Graded)](#message-encryptiondecryption-challenge-graded)
   - [Grading and Rubric](#grading-and-rubric)
   - [Getting Started](#getting-started)
   - [Encrypt Method](#encrypt-method)
@@ -26,7 +28,8 @@ program then use your implementation to decrypt each of the messages in the
 
 ## Grading and Rubric
 
-This mini-project will be weighted as 1/2 a normal project. You can find the rubric here: [LINK](Grading.md)
+This mini-project will be weighted as 1/2 a normal project. You can find the
+rubric here: [LINK](Grading.md)
 
 ## Getting Started
 
@@ -41,7 +44,8 @@ This mini-project will be weighted as 1/2 a normal project. You can find the rub
 ![New Cipher](imgs/new_cipher.png)
 
 4. Create a `string` variable named `encrypted`
-5. Assign `encrypted` to store the result of running `cipher.Encrypt("rosebud")`;
+5. Assign `encrypted` to store the result of running
+   `cipher.Encrypt("rosebud")`;
 6. Write the result to the console.
 
 ![RoseBud](imgs/rosebud.png)
@@ -52,7 +56,8 @@ This mini-project will be weighted as 1/2 a normal project. You can find the rub
 
 ## Encrypt Method
 
-Unfortunately, the `Encrypt(string)` method is incomplete. Let's take a look at it.
+Unfortunately, the `Encrypt(string)` method is incomplete. Let's take a look at
+it.
 
 1. Open the `Cipher.cs` file.
 2. Scroll down to the `Encrypt` method.
@@ -76,7 +81,8 @@ output `wtxjgzi`.
 When you finish the `Encrypt(string)` method, you should:
 
 1. Save all your work
-2. Commit your work. Your message should be something like `feat: Add Encrypt method`
+2. Commit your work. Your message should be something like `feat: Add Encrypt
+   method`
 3. Push your works
 
 ## Decrypt Method
@@ -94,7 +100,8 @@ previously encrypted message:
 When you finish the `Decrypt(string)` method, you should:
 
 1. Save all your work
-2. Commit your work. Your message should be something like `feat: Add Decrypt method`
+2. Commit your work. Your message should be something like `feat: Add Decrypt
+   method`
 3. Push your works
 
 ## Decrypting secrets/1.txt
@@ -171,8 +178,8 @@ know the possible value for the shifts: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
 
 You could go through each file and manually by hand and run each possible cipher
 over the string to find the correct answer. However, this would be incredibly
-tedious. Instead, we can write a loop to iterate through each value. Here is the general
-algorithm:
+tedious. Instead, we can write a loop to iterate through each value. Here is the
+general algorithm:
 
 1. Create an `int` variable `shift` and set it to 1
 2. Use a `while` loop that executes if `shift <= 10`
@@ -185,9 +192,27 @@ algorithm:
 Once you have done this, you can "eye-ball" each output and select the one that
 is not gibberish.
 
-For example:
+**NOTE**: Some of the shifts will result in a special character which causes the
+terminal to clear. For example, when you execute `dotnet run secrets/1.txt` your
+output will look similar to this:
 
-![Decode](imgs/decode.png)
+![Error Output](imgs/example_error_output.png)
+
+To be able to see the result of all the ciphers, you can output the results to a
+text file. This can be done by running `dotnet run secrets/1.txt > output.txt`.
+This will cause the results to be written to the file `output.txt` rather than
+to the console. Then, you can open `output.txt` to find the results. Because the
+shift caused non-text values to be part of the string, you need to tell VS Code
+to open the file as a text file:
+
+![Open Output](imgs/open_anyway.png)
+
+![Use Text Editor](imgs/use_text_editor.png)
+
+After you do this, you should be able to find the decoded message:
+
+![Result Decoded](imgs/result_decode.png)
+
 
 ## Decrypted Messages
 
