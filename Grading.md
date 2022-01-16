@@ -1,6 +1,6 @@
 # Grading
 
-This mini-project will be weighted as 1/3 a normal project.
+This mini-project will be weighted as 1/2 a normal project.
 
 ## Computational Thinking
 
